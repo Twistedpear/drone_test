@@ -22,3 +22,9 @@ steps:
     commands:
             - echo "hello world"
     depends_on: [ step 1 ]
+
+  - name: step 5
+    image: alpine
+    commands:
+            - echo "Finished!"
+    depends_on: [ step 3, step 4 ]
