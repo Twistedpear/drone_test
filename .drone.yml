@@ -21,4 +21,4 @@ steps:
     image: alpine
     commands:
             - echo "hello world"
-    depends_on: [ step 2 (sleep) ]
+    depends_on: [ step 1 ]
